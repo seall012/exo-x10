@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer";
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #101010;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #0df638;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0.5em 0;
+}
+
+nav ul li a {
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    padding: 2em;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #747779;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+.custom-image {
+    width: 200px;
+    height: 200px; /* Maintient le ratio de l'image */
+}
